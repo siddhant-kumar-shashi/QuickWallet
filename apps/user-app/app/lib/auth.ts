@@ -40,6 +40,14 @@ export const authOptions = {
                     }
                 });
             
+                await db.balance.create({
+                    data: {
+                        userId: user.id,
+                        amount: Number(0),
+                        locked: Number(0)
+                    }
+                });
+
                 return {
                     id: user.id.toString(),
                     name: user.name,
