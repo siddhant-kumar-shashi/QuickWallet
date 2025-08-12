@@ -50,7 +50,7 @@ export const authOptions = {
             }
 
             return null
-          },
+          } ,
         })
     ],
     secret: process.env.JWT_SECRET || "secret",
